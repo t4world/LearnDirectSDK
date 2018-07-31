@@ -397,7 +397,7 @@ HRESULT InitDevice()
 	XMVECTOR up = XMVectorSet(0.0f, 1.0f, 0.0f, 0.0f);
 	g_view = XMMatrixLookAtLH(eye, at, up);
 
-	g_projection = XMMatrixPerspectiveFovLH(XM_PIDIV2, width / (FLOAT)height, 0.0f, 100.0f);
+	g_projection = XMMatrixPerspectiveFovLH(XM_PIDIV2, width / (FLOAT)height, 0.1f, 100.0f);
 
  	return S_OK;
 }
